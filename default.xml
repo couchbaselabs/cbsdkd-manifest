@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote
+        name = "couchbase" 
+        fetch = "git@github.com:couchbase/"
+        />
+
+    <default revision="master" remote="couchbase"/>
+
+    <project path="cbsdkd.git" name="cbsdkd" />
+    <project path="sdkd-cpp.git" name="sdkd-cpp" remote="couchbase"/>
+    <project path="sdkd-net.git" name="sdkd-net" remote="couchbase"/>
+
+</manifest>
