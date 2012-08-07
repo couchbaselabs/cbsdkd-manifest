@@ -1,14 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <manifest>
-    <remote
-        name = "couchbase" 
-        fetch = "git@github.com:couchbase/"
-        />
+    <default revision="master" remote="priv"/>
 
-    <default revision="master" remote="couchbase"/>
+    <!-- For private repositories -->
+    <remote name="priv" fetch="ssh://git@github.com/couchbase"/>
 
-    <project path="cbsdkd.git" name="cbsdkd" />
-    <project path="sdkd-cpp.git" name="sdkd-cpp" remote="couchbase"/>
-    <project path="sdkd-net.git" name="sdkd-net" remote="couchbase"/>
+    <!-- for public repositories -->
+    <remote name="pub" fetch="git://github.com/couchbase"/>
 
+    <!-- generic dependencies -->
+    <remote name="jsoncpp" fetch="git://github.com/mrtazz"/>
+
+    <project path="sdkd-net" name="sdkd-net" remote="priv" />
+
+    <project path="sdkd-cpp" name="sdkd-cpp" remote="priv" />
+
+    <project path="cbsdkd" name="cbsdkd" remote="priv"/>
+
+    <project path="testrunner" name="testrunner" remote="pub"/>
+
+    <project path="libcouchbase" name="libcouchbase" remote="pub"/>
+
+    <project path="json-cpp" name="json-cpp" remote="jsoncpp"/>
 </manifest>
