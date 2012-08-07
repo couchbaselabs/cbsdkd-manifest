@@ -10,6 +10,7 @@
 
     <!-- generic dependencies -->
     <remote name="jsoncpp" fetch="git://github.com/mrtazz"/>
+    <remote name="mark" fetch="git://github.com/mnunberg/"/>
 
     <project path="sdkd-net" name="sdkd-net" remote="priv" />
 
@@ -17,9 +18,7 @@
 
     <project path="cbsdkd" name="cbsdkd" remote="priv"/>
 
-    <project path="testrunner" name="testrunner" remote="pub"/>
-
-    <project path="libcouchbase" name="libcouchbase" remote="pub"/>
+    <project path="testrunner" name="testrunner" remote="mark"/>
 
     <project path="json-cpp" name="json-cpp" remote="jsoncpp"/>
 </manifest>
