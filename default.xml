@@ -18,7 +18,7 @@
 
     <project path="cbsdkd" name="cbsdkd" remote="priv"/>
 
-    <project path="testrunner" name="testrunner" remote="mark"/>
+    <project path="testrunner" name="testrunner" remote="mark" revision="sdkd_stable"/>
 
     <project path="json-cpp" name="json-cpp" remote="jsoncpp"/>
 </manifest>
